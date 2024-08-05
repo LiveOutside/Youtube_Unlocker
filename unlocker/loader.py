@@ -49,10 +49,3 @@ def unpack_gbdpi(gbdpi_path: str, extract_to: str) -> (str | None):
 
 
 
-if __name__ == "__main__":
-    download_gbdpi()
-    time.sleep(10)
-    print(unpack_gbdpi(get_gbdpi_dir(), "E:\\"))
-
-
-

@@ -41,11 +41,8 @@ def unpack_gbdpi(gbdpi_path: str, extract_to: str) -> (str | None):
             print(f": Extracted all files: '{extract_to}'")
 
         remove(gbdpi_path)
-        print(f": Created folder path: {extract_to + basename(gbdpi_path).replace(".zip", "")}")
-        return extract_to + basename(gbdpi_path).replace(".zip", "")
+        print(f": Created folder path: {extract_to}\{basename(gbdpi_path).replace(".zip", "")}")
+        return extract_to + "/" + basename(gbdpi_path).replace(".zip", "")
         
     except Exception as e:
         print(f"!! Error during .zip extraction: {e}")
-
-
-

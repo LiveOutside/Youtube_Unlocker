@@ -1,6 +1,9 @@
+from pathlib import Path
+
+
 # Global paths
 DOWNLOADS_DIR = None
-EXTRACTION_DIR = "E:/"
+EXTRACTION_DIR = str(Path.home())
 
 # GBDPI Releases
 v0_2_3 = "https://github.com/ValdikSS/GoodbyeDPI/releases/download/0.2.3rc1/goodbyedpi-0.2.3rc1-2.zip"

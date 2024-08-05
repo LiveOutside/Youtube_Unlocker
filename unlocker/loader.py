@@ -30,7 +30,7 @@ def get_gbdpi_dir() -> str:
     return gbdpi_archived_path
 
 
-def unpack_gbdpi(gbdpi_path: str, extract_to: str) -> (str | None):
+def unpack_gbdpi(gbdpi_path: str, extract_to: str):
     """
     Extracts GBDPI to a specified folder
     """
@@ -41,7 +41,7 @@ def unpack_gbdpi(gbdpi_path: str, extract_to: str) -> (str | None):
             print(f": Extracted all files: '{extract_to}'")
 
         remove(gbdpi_path)
-        print(f": Created folder path: {extract_to}\{basename(gbdpi_path).replace(".zip", "")}")
+        print(f": Created folder path: {extract_to}\{basename(gbdpi_path).replace('.zip', '')}")
         return extract_to + "/" + basename(gbdpi_path).replace(".zip", "")
         
     except Exception as e:

@@ -30,7 +30,7 @@ cd /d {x86_64_path}
 goodbyedpi.exe --blacklist youtube-domain.txt -6
 """)
         print(": Batch build successful <3")
-        # add_to_startup(batch_name, batch_path)
+        add_to_startup(batch_name, batch_path)
 
     except Exception as e:
         print(f"!! Error while building batch file: {e}")
